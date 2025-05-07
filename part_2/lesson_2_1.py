@@ -17,10 +17,10 @@ num = 0
 while number > 0:
     num_0 = number % 10
     number //= 10
-    count += 1
     if num_0 > num:
+        count += 1
         num = num_0
     else:
-        continue
+        count += 1
 
 print(f'Самая большая цифра в числе: {num}.')
