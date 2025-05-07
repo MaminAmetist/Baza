@@ -23,14 +23,11 @@ income = int(input('Введите выручку фирмы: '))
 loss = int(input('Введите издержки фирмы: '))
 profit = income - loss
 print(f'Финансовый результат - прибыль. Ее величина: {profit}')
-rentability = profit/income
-print(f'Рентабельность выручки = {rentability}')
+print(f'Рентабельность выручки = {profit/income}')
 if profit > 0:
     staff = int(input('Введите численность сотрудников фирмы: '))
-    profit_employee = profit/staff
-    print(f'Прибыль фирмы в расчете на одного сотрудника = {profit_employee}')
+    print(f'Прибыль фирмы в расчете на одного сотрудника = {profit/staff}')
 elif profit == 0:
-    print('ну ой')
+    print('мы не в минусе, это успех')
 else:
     print('ну ой')
-
