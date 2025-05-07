@@ -20,7 +20,7 @@ while c <= a:
         print(len(n))
         break
     elif d < a:
-        continue
+        print(d)
     else:
         print(-1)
         break
