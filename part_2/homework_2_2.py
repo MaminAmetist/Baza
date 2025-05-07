@@ -15,6 +15,5 @@ while n > 0:
         n -= 1
     else:
         n -= 1
-        continue
 
 print(summ)
