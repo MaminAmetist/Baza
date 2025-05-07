@@ -12,11 +12,11 @@
 *********
 """
 
-yolki_palki = int(input('Сколько рядов у ёлки? '))
+count = int(input('Сколько рядов у ёлки? '))
 n = 1
 lvl = '*'
-center = yolki_palki
-while n <= yolki_palki:
+center = count
+while n <= count:
     print(center * ' ' + lvl)
     lvl += '**'
     center -= 1
