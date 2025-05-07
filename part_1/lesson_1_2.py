@@ -26,5 +26,5 @@ Output: 32"""
 #     count_desk += j // 2 if j % 2 == 0 else (j // 2 + 1)
 # print(count_desk)
 
-A, B, C = 20, 21, 22
-print(f'Нужно купить {A // 2 + A % 2 + B // 2 + B % 2 + C // 2 + C % 2} парты')
+a, b, c = 20, 21, 22
+print(f'Нужно купить {a // 2 + a % 2 + b // 2 + b % 2 + c // 2 + c % 2} парты')
