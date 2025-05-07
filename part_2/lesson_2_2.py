@@ -8,18 +8,18 @@
 Input: 5
 Output: 6
 """
-A = int(input('Введите натуральное число A > 1: '))
-B = 0
-C = 1
-n = str(B) + str(C)
-while C <= A:
-    D = B + C
-    n += str(D)
-    B, C = C, D
-    if D == A:
+a = int(input('Введите натуральное число a > 1: '))
+b = 0
+c = 1
+n = str(b) + str(c)
+while c <= a:
+    d = b + c
+    n += str(d)
+    b, c = c, d
+    if d == a:
         print(len(n))
         break
-    elif D < A:
+    elif d < a:
         continue
     else:
         print(-1)
