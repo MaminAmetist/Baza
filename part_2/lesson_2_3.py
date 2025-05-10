@@ -15,7 +15,7 @@
 count = int(input('Сколько рядов у ёлки? '))
 n = 1
 lvl = '*'
-center = count
+center = count - 1
 while n <= count:
     print(center * ' ' + lvl)
     lvl += '**'
