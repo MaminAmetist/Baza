@@ -20,7 +20,5 @@ while number > 0:
     if num_0 > num:
         count += 1
         num = num_0
-    else:
-        count += 1
 
 print(f'Самая большая цифра в числе: {num}.')
