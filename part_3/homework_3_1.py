@@ -8,7 +8,6 @@
 """
 
 lst_repeat = [1, 2, 1, 2, 4, 3, 5, 4, 3, 5]
-print(lst_repeat)
 lst_index = []
 count = 0
 for i in lst_repeat:
