@@ -12,7 +12,7 @@ lst_index = []
 count = 0
 for i in lst_repeat:
     count += 1
-    if count % 2 != 0:
+    if i % 2 != 0:
         lst_index.append(count)
 
 print(lst_index)
