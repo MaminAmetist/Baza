@@ -21,9 +21,7 @@ my_list = [7, 5, 3, 3, 2]
 new_rating = int(input('Введи значение нового рейтинга: '))
 
 for i in my_list:
-    if i > new_rating:
-        pass
-    else:
+    if i < new_rating:
         my_list.insert(my_list.index(i), new_rating)
         break
 else:
