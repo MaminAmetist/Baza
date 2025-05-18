@@ -17,5 +17,7 @@ try:
     for elem in time_year:
         if int(time_now) == elem:
             print(time_year[elem])
+    else:
+        print('в году только 12 месяцев')
 except:
     print('что-то пошло не так')
