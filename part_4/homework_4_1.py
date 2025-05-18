@@ -18,6 +18,7 @@ dict_txt = {}
 
 for i in txt:
     dict_txt[i] = txt.count(i)
+    
 print(dict_txt)
 
 dict_txt = {}
@@ -26,4 +27,5 @@ for i in txt:
         dict_txt[i] = 1
     else:
         dict_txt[i] += 1
+        
 print(dict_txt)
