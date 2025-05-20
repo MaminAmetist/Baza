@@ -13,9 +13,9 @@ I'm sure that the shells are sea shore shells
 Output: 13
 """
 
-lst_txt = ("She sells sea shells on the sea shore "
-       "The shells that she sells are sea shells "
-       "I'm sure So if she sells sea shells on the sea shore "
-       "I'm sure that the shells are sea shore shells").lower().split()
+lst_txt = """She sells sea shells on the sea shore 
+       The shells that she sells are sea shells 
+       I'm sure So if she sells sea shells on the sea shore 
+       I'm sure that the shells are sea shore shells""".lower().split()
 
 print(len(set(lst_txt)))
