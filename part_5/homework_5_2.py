@@ -5,5 +5,6 @@
 Подсказка: использовать функцию range() и list comrehension.
 """
 
-lst = [i for i in range(20, 241) if i % 20 == 0 or i % 21 == 0]
+lst = [elem for elem in range(20, 241) if elem % 20 == 0 or elem % 21 == 0]
+
 print(lst)
