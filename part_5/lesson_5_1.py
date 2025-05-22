@@ -10,6 +10,6 @@
 """
 
 lst = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
-lst_lonely = [i for i in lst if lst.count(i) == 1]
+lst_lonely = [elem for elem in lst if lst.count(elem) == 1]
 
 print(lst_lonely)
