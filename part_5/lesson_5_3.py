@@ -11,6 +11,6 @@
 
 # традиционный итератор с функцией append
 lst = [2, 2, 2, 3, 3, 5]
-lst_numbers = [i + 1 for i in range(len(lst)) if lst[i] % 2 == 1]
+lst_numbers = [i for i, elem in enumerate(lst, 1) if elem % 2 == 1]
 
 print(lst_numbers)
