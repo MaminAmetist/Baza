@@ -22,7 +22,7 @@ same
 
 
 def same_by(characteristic, objects):
-    check = len(set(list(map(characteristic, objects))))
+    check = len(set(map(characteristic, objects)))
     return True if check == 1 or check == 0 else False
 
 
