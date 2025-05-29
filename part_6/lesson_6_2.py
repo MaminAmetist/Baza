@@ -32,7 +32,8 @@ from math import pi
 
 
 def find_farthest_orbit(list_of_orbits):
-    S = [pi * elem[0] * elem[1] for elem in list_of_orbits]
+    elliptical_orbits = [(a, b) for a, b in list_of_orbits if a != b]
+    S = [pi * a * b for a, b in elliptical_orbits]
     return list_of_orbits[S.index(max(S))]
 
 
