@@ -22,8 +22,7 @@ same
 
 
 def same_by(characteristic, objects):
-    check = len(set(map(characteristic, objects)))
-    return True if check == 1 or check == 0 else False
+    return True if len(set(map(characteristic, objects))) < 2 else False
 
 
 values = [0, 2, 10, 6]
