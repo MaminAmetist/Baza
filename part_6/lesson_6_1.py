@@ -26,7 +26,7 @@ ok
 """
 
 values = [1, 23, 42, 'asdfg']
-transformation = lambda lst: lst
+transformation = lambda elem: elem
 transformed_values = list(map(transformation, values))
 
 if values == transformed_values:
