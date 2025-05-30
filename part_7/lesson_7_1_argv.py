@@ -8,10 +8,14 @@
 
 from sys import argv
 
+
+def calculate_salary(output, hourly_rate, award):
+    return int(output) * int(hourly_rate) + int(award) * (int(output) * int(hourly_rate)) / 100
+
+
 script_name, output, hourly_rate, award = argv
-salary = int(output) * int(hourly_rate) + int(award) * (int(output) * int(hourly_rate)) / 100
 
 print("выработка в часах: ", output)
 print("ставка в час: ", hourly_rate)
 print("премия: ", award)
-print(salary)
+print(calculate_salary(output, hourly_rate, award))
