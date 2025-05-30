@@ -7,6 +7,11 @@
 
 from argparse import ArgumentParser
 
+
+def calculate_salary(output, hourly_rate, award):
+    return int(args.output) * int(args.hourly_rate) + int(args.award) * (int(args.output) * int(args.hourly_rate)) / 100
+
+
 parser = ArgumentParser(description="Принимаем строку с параметрами")
 
 parser.add_argument("-output", type=int, default=20)
@@ -14,9 +19,8 @@ parser.add_argument("-hourly_rate", type=int, default=500)
 parser.add_argument("-award", type=int, default=10)
 
 args = parser.parse_args()
-salary = int(args.output) * int(args.hourly_rate) + int(args.award) * (int(args.output) * int(args.hourly_rate)) / 100
 
-print("выработка в часах:", args.output)
-print("ставка в час:", args.hourly_rate)
-print("премия:", args.award)
-print(salary)
+print(f'Выработка в часах: {args.output}')
+print(f'Ставка в час: , {args.hourly_rate}')
+print(f'Премия: , {args.award}')
+print(calculate_salary(args.output, args.hourly_rate, args.award))
