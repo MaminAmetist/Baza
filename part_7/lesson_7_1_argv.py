@@ -15,7 +15,7 @@ def calculate_salary(output, hourly_rate, award):
 
 script_name, output, hourly_rate, award = argv
 
-print("выработка в часах: ", output)
-print("ставка в час: ", hourly_rate)
-print("премия: ", award)
+print(f'Выработка в часах: {output}')
+print(f'Ставка в час: , {hourly_rate}')
+print(f'Премия: , {award}')
 print(calculate_salary(output, hourly_rate, award))
